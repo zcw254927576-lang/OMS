@@ -1,0 +1,12 @@
+node_modules/
+target/
+*.jar
+*.log
+.DS_Store
+.env
+.claude/
+backend/*.sql
+backend/*.json
+backend/BcryptTest.java
+.idea/
+*.iml

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oms.mapper.OmsCustomerMapper">
+
+    <!-- 客户消费排行 -->
+    <select id="selectCustomerRanking" resultType="java.util.Map">
+        SELECT c.id, c.customer_no as customerNo, c.customer_name as customerName,
+               c.total_amount as totalAmount, c.order_count as orderCount
+        FROM oms_customer c
+        WHERE c.order_count > 0
+        ORDER BY c.total_amount DESC
+        LIMIT #{limit}
+    </select>
+
+</mapper>
