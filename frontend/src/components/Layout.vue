@@ -3,8 +3,8 @@
     <!-- 侧边栏 -->
     <el-aside :width="isCollapse ? '64px' : '220px'" style="background: #304156; transition: width 0.3s">
       <div class="logo" style="height: 60px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1)">
-        <span v-if="!isCollapse">OMS 管理系统</span>
-        <span v-else>OMS</span>
+        <span v-if="!isCollapse">牛管家自研版</span>
+        <span v-else>牛管家</span>
       </div>
       <el-menu
         :default-active="activeMenu"
